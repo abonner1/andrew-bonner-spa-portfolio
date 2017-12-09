@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Scott Bonner - Developer</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+  </head>
+  <body id="main-page">
+    {{> navigation}}
+    <div id="welcome" class="welcome">
+      <div class="cover-image">
+        <img src="/images/pickwick.png" alt="pickwick">
+      </div>
+      <div class="header">
+        <p class="blurb">Hello, my name is Andrew. I am a Full Stack Developer. If you want to learn a little more about me and see what I've been working on <a href="#projects">click here</a>.</p>
+        <div class="social">
+          <ul>
+            <li>
+              <div class="mail-icon">
+                <a href="mailto:andrewbonner92@gmail.com?subject=Hi there!"><img class="mail" src="https://i.imgur.com/bXAdv31.png" alt="Mail"></a>
+                <a href="mailto:andrewbonner92@gmail.com?subject=Hi there!"><img class="mail-red" src="https://i.imgur.com/ytRQCWS.png" alt="Mail"></a>
+              </div>
+            </li>
+            <li>
+              <div class="github-icon">
+                <a href="https://github.com/abonner1/"><img class="github" src="https://i.imgur.com/di8aI58.png" alt="Github"></a>
+                <a href="https://github.com/abonner1/"><img class="github-red" src="https://i.imgur.com/EkcJJgw.png" alt="Github"></a>
+              </div>
+            </li>
+            <li>
+              <div class="twitter-icon">
+                <a href="https://twitter.com/AndrewBonner2"><img class="twitter" src="https://i.imgur.com/Y9NvZMU.png" alt="Twitter"></a>
+                <a href="https://twitter.com/AndrewBonner2"><img class="twitter-red" src="https://i.imgur.com/ftYdEER.png" alt="Twitter"></a>
+              </div>
+            </li>
+            <li>
+              <div class="linkedin-icon">
+                <a href="https://www.linkedin.com/in/andrewbonner2/"><img class="linkedin" src="https://i.imgur.com/gR1XStb.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/andrewbonner2/"><img class="linkedin-red" src="https://i.imgur.com/d5gRqMk.png" alt="LinkedIn"></a>
+              </div>
+            </li>
+            <li>
+              <div class="medium-icon">
+                <a href="https://medium.com/@AndrewBonner2"><img class="medium" src="https://i.imgur.com/ZORUXsS.png" alt="Medium"></a>
+                <a href="https://medium.com/@AndrewBonner2"><img class="medium-red" src="https://i.imgur.com/rCE5WBV.png" alt="Medium"></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="projects" class="projects">
+      <h1 class="title italic">Projects by the Developer</h1>
+      <div class="col-1">
+        <h2>Sorter - <a href="https://github.com/abonner1/sorter">Github</a></h2>
+        <p>Created with Ruby on Rails Framework. Utilizes MVC architecture. Powered by an ActiveRecord database with complex associations and validations. Authenticates and registers users with OAuth and Devise. Manipulates the DOM with JavaScript and jQuery. Tested with Rspec. Styled with custom CSS and Twitter Bootstrap framework.</p>
+        <h2>TripAdvisor Best - <a href="https://github.com/abonner1/tripadvisor-choice-cli-gem">Github</a></h2>
+        <p>Built in pure Ruby for the Command Line. Uses data scraper on TripAdvisor’s web pages to deliver content. Prints content to CLI. Contains interactive CLI menu to customize data results. Designed with Object Oriented Programming principles. Deployed to Rubygems.org using Bundler.</p>
+      </div>
+      <div class="col-2">
+        <h2>TodoList - <a href="https://github.com/abonner1/todo-list-client">Github</a></h2>
+        <p>Constructed with React.js library. Backed by a Ruby on Rails API. Utilizes RESTful routing. Manages state for both synchronous and asynchronous actions with Redux. Controls nested routes with React Router. Registers and authenticates users with isometric-fetch and JSON Web Tokens (JWT).</p>
+        <h2>Bookster  - <a href="https://github.com/abonner1/bookster">Github</a></h2>
+        <p>Built in Ruby and the Sinatra framework. Handles nested routes and nested routes. Engineered with MVC architecture. Powered by an ActiveRecord database with complex associations and validations. Contains custom user authentication and authorization system. Utilizes nested forms.</p>
+      </div>
+      <div class="projects-image">
+        <img src="images/pickwick-2.png" alt="pickwick">
+      </div>
+    </div>
+    <hr>
+    <div id="biography" class="biography">
+      <div class="bio-image">
+        <img src="/images/BrennenAndrew.png" alt="Andrew">
+      </div>
+      <div class="col-1 special">
+        <h1 class="italic">About the Developer</h1>
+        <p>
+          I was never your typical librarian. From the beginning of my information science career, I became deeply interested in web development and software engineering, searching for ways to better connect users with the information and data they seek.
+        </p>
+        <p>
+          Simple HTML and CSS pages were my introduction to web development and my first interactions with programming. Then came Python and Object Orientation. Now, along with Python, HTML, and CSS, I hold extensive experience in JavaScript, Ruby on Rails, and many JavaScript frameworks, until I arrived here: a full stack web developer.
+        </p>
+        <p>
+          Right now I am library assistant at the University of Notre Dame, hoping to transition into a full time software engineering career.
+        </p>
+      </div>
+    </div>
+    {{> footer}}
+  </body>
+</html>

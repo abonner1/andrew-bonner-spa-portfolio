@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i');
+
+body {
+  background-color: #E8E8E8;
+  font-family: 'EB Garamond', serif;
+}
+
+/* NAVIGATION */
+
+#navbar {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #E7E7E7;
+  position: fixed;
+  -webkit-box-shadow: 0 3px 6px #999;
+  -moz-box-shadow: 0 3px 6px #999;
+  box-shadow: 0 3px 6px #999;
+}
+
+#navbar ul {
+  list-style: none;
+  text-align: center;
+}
+
+#navbar ul li {
+  display: inline-block;
+  width: 25%;
+  padding: 15px 5px 5px 5px;
+}
+
+#navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* LINK STYLES */
+
+a {
+  color: inherit;
+  /*text-decoration: none;*/
+}
+
+a:hover {
+  color: red;
+  transition: 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+}
+
+/* TITLE STYLES */
+
+div.header {
+  padding: 225px 100px 0 0;
+  float: right;
+  text-align: justify;
+  width: 700px;
+}
+
+div.header p {
+  font-size: 25pt;
+}
+
+p.blurb {
+  padding: 50px 0;
+  font-style: italic;
+}
+
+h1.title {
+  padding: 75px 0 25px 0;
+  text-align: center;
+}
+
+h1.title, div.biography h1 {
+  font-size: 45px;
+}
+
+h1.italic {
+  font-style: italic;
+}
+
+/* SECTION STYLES */
+div.welcome, div.biography, div.projects {
+  clear: both;
+}
+
+div.biography {
+  margin-top: 75px;
+}
+
+hr {
+  border: 0;
+}
+
+/* TEXT STYLES */
+
+div.col-1, div.col-2 {
+  padding: 50px 25px 0 25px;
+  text-align: justify;
+}
+
+div.col-1 {
+  float: left;
+  width: 300px;
+  margin-left: 75px;
+}
+
+div.col-2 {
+  float: right;
+  width: 300px;
+  margin-right: 75px;
+}
+
+div.projects p {
+  padding: 5px 0 50px;
+}
+
+div.biography p {
+  padding: 10px 0;
+}
+
+div.col-1.special {
+  margin-left: 100px;
+  width: 35%;
+  padding: 70px 0 25px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+/*div.col-2.special-2 {
+  padding: 25px 125px 0 0;
+  width: 25%;
+}*/
+
+/* IMAGE STYLES */
+div.cover-image {
+  padding: 75px 0 0 125px;
+}
+
+div.cover-image img {
+  height: 700px;
+  width: auto;
+  float: left;
+}
+
+div.bio-image {
+  float: right;
+  margin-top: 50px;
+}
+
+div.bio-image img {
+  height: 500px;
+  width: auto;
+  padding: 0 200px 0 0 ;
+}
+
+div.projects-image {
+  height: auto;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.projects-image img {
+  width: 450px;
+  height: auto;
+}
+
+/* SOCIAL ICONS */
+div.social {
+  text-align: center;
+}
+
+.social ul {
+  list-style-type: none;
+  margin: 25px 0;
+}
+
+.social ul li {
+  display: inline-block;
+  padding: 0 5px 0 0;
+}
+
+.social img {
+  height: 35px;
+  width: auto;
+}
+
+.social img.medium, .social img.medium-red {
+  height: 28px;
+  padding: 0 0 4px;
+}
+
+/* MAIL */
+div.mail-icon {
+  position: relative;
+}
+
+div.mail-icon img.mail {
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div.mail-icon img.mail:hover {
+  opacity: 0;
+}
+
+img.mail-red:hover {
+  opacity: 1;
+}
+
+/* GITHUB */
+div.github-icon {
+  position: relative;
+}
+
+div.github-icon img.github {
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div.github-icon img.github:hover {
+  opacity: 0;
+}
+
+img.github-red:hover {
+  opacity: 1;
+}
+
+/* TWITTER */
+div.twitter-icon {
+  position: relative;
+}
+
+div.twitter-icon img.twitter {
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div.twitter-icon img.twitter:hover {
+  opacity: 0;
+}
+
+img.twitter-red:hover {
+  opacity: 1;
+}
+
+/* LINKEDIN */
+div.linkedin-icon {
+  position: relative;
+}
+
+div.linkedin-icon img.linkedin {
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div.linkedin-icon img.linkedin:hover {
+  opacity: 0;
+}
+
+img.linkedin-red:hover {
+  opacity: 1;
+}
+
+/* MEDIUM */
+div.medium-icon {
+  position: relative;
+}
+
+div.medium-icon img.medium {
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+div.medium-icon img.medium:hover {
+  opacity: 0;
+}
+
+img.medium-red:hover {
+  opacity: 1;
+}
+
+/* FOOTER STYLE */
+#footer {
+  font-size: 15pt;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 35px 0 20px;
+  clear: both;
+}
+
+#footer img {
+  height: 12px;
+  width: auto;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (min-width: 1650px) {
+  #navbar {
+    height: 100px;
+  }
+
+  #navbar ul li {
+    width: 20%;
+    padding: 25px 5px 5px 5px;
+  }
+
+  #navbar a {
+    font-size: 40px;
+  }
+
+  div.header {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    padding: 400px 0 0;
+  }
+
+  div.col-1, div.col-2 {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  div.col-1.special {
+    margin-left: 150px;
+    width: 50%;
+    padding: 70px 0 25px;
+  }
+
+  h1.title, div.biography h1 {
+    font-size: 65px;
+  }
+
+  div.header p {
+    font-size: 75px;
+  }
+
+  div.biography p, div.projects p {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  div.cover-image img {
+    padding: 50px 0 0;
+    height: 1250px;
+    width: auto;
+  }
+
+  div.projects-image {
+    height: auto;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.projects-image img {
+    display: none;
+  }
+
+  div.bio-image {
+    float: right;
+    margin-top: 50px;
+  }
+
+  div.bio-image img {
+    height: 800px;
+    width: auto;
+    padding: 0 100px 0 0 ;
+  }
+
+  .social img {
+    height: 75px;
+    width: auto;
+  }
+
+  .social img.medium, .social img.medium-red {
+    height: 65px;
+    padding: 0 0 4px;
+  }
+
+  div.biography, div.projects {
+    padding: 25px 0 0;
+  }
+
+  #footer {
+    font-size: 40px;
+  }
+
+  #footer img {
+    height: 25px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  div.welcome {
+    padding: 50px 0 0 0;
+  }
+
+  div.biography {
+    margin-top: 0;
+  }
+
+  h1.title {
+    font-size: 50px;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  div.biography h1 {
+    font-size: 50px;
+  }
+
+  div.col-1, div.col-2 {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+  }
+
+  div.col-1.special {
+    margin: 0 auto;
+    width: 80%;
+    padding: 15px 0 0 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  hr {
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
+    height: 10px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  div.projects-image {
+    display: none;
+  }
+
+  div.bio-image {
+    float: none;
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  div.bio-image img {
+    width: 250px;
+    height: auto;
+    padding: 100px 0 0 0;
+  }
+
+  div.cover-image {
+    padding: 25px 0 0 50px;
+    width: 250px;
+    height: auto;
+  }
+
+  div.header {
+    float: none;
+    padding: 100px 0 15px;
+    margin: 10px auto 0;
+    width: 80%;
+  }
+
+  .social ul {
+    margin: 0;
+  }
+
+  #navbar ul li {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.cover-image img {
+    display: none;
+  }
+
+  #navbar {
+    height: 50px;
+  }
+
+  #navbar a {
+    font-size: 15px;
+  }
+
+  #navbar ul li {
+    width: 20%;
+  }
+
+  div.bio-image {
+    width: 200px;
+  }
+
+  div.bio-image img {
+    width: 200px;
+  }
+
+  h1.title {
+    font-size: 25px;
+  }
+
+  div.biography h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  div.header p {
+    padding: 0 0 15px;
+    font-size: 25px;
+  }
+
+  div.welcome {
+    padding: 0 0 15px;
+  }
+}

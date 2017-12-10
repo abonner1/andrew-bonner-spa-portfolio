@@ -24,26 +24,26 @@
             </li>
             <li>
               <div class="github-icon">
-                <a href="https://github.com/abonner1/"><img class="github" src="https://i.imgur.com/di8aI58.png" alt="Github"></a>
-                <a href="https://github.com/abonner1/"><img class="github-red" src="https://i.imgur.com/EkcJJgw.png" alt="Github"></a>
+                <a href="https://github.com/abonner1/" target="_blank"><img class="github" src="https://i.imgur.com/di8aI58.png" alt="Github"></a>
+                <a href="https://github.com/abonner1/" target="_blank"><img class="github-red" src="https://i.imgur.com/EkcJJgw.png" alt="Github"></a>
               </div>
             </li>
             <li>
               <div class="twitter-icon">
-                <a href="https://twitter.com/AndrewBonner2"><img class="twitter" src="https://i.imgur.com/Y9NvZMU.png" alt="Twitter"></a>
-                <a href="https://twitter.com/AndrewBonner2"><img class="twitter-red" src="https://i.imgur.com/ftYdEER.png" alt="Twitter"></a>
+                <a href="https://twitter.com/AndrewBonner2" target="_blank"><img class="twitter" src="https://i.imgur.com/Y9NvZMU.png" alt="Twitter"></a>
+                <a href="https://twitter.com/AndrewBonner2" target="_blank"><img class="twitter-red" src="https://i.imgur.com/ftYdEER.png" alt="Twitter"></a>
               </div>
             </li>
             <li>
               <div class="linkedin-icon">
-                <a href="https://www.linkedin.com/in/andrewbonner2/"><img class="linkedin" src="https://i.imgur.com/gR1XStb.png" alt="LinkedIn"></a>
-                <a href="https://www.linkedin.com/in/andrewbonner2/"><img class="linkedin-red" src="https://i.imgur.com/d5gRqMk.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/andrewbonner2/" target="_blank"><img class="linkedin" src="https://i.imgur.com/gR1XStb.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/andrewbonner2/" target="_blank"><img class="linkedin-red" src="https://i.imgur.com/d5gRqMk.png" alt="LinkedIn"></a>
               </div>
             </li>
             <li>
               <div class="medium-icon">
-                <a href="https://medium.com/@AndrewBonner2"><img class="medium" src="https://i.imgur.com/ZORUXsS.png" alt="Medium"></a>
-                <a href="https://medium.com/@AndrewBonner2"><img class="medium-red" src="https://i.imgur.com/rCE5WBV.png" alt="Medium"></a>
+                <a href="https://medium.com/@AndrewBonner2" target="_blank"><img class="medium" src="https://i.imgur.com/ZORUXsS.png" alt="Medium"></a>
+                <a href="https://medium.com/@AndrewBonner2" target="_blank"><img class="medium-red" src="https://i.imgur.com/rCE5WBV.png" alt="Medium"></a>
               </div>
             </li>
           </ul>
@@ -91,5 +91,22 @@
       </div>
     </div>
     {{> footer}}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
+               if (target.length) {
+                 $('html,body').animate({
+                     scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+      });
+    </script>
   </body>
 </html>

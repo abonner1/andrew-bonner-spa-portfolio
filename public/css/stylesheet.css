@@ -410,7 +410,7 @@ img.medium-red:hover {
   div.bio-image img {
     height: 700px;
     width: auto;
-    padding: 0 100px 0 0 ;
+    padding: 0 100px 0 50px;
   }
 
   .social img {

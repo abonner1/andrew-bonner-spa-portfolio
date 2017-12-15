@@ -333,7 +333,7 @@ img.medium-red:hover {
 /* RESPONSIVE DESIGN */
 @media screen and (min-width: 1650px) {
   #navbar {
-    height: 100px;
+    height: 75px;
   }
 
   #navbar ul li {
@@ -342,7 +342,7 @@ img.medium-red:hover {
   }
 
   #navbar a {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   div.header {
@@ -365,25 +365,29 @@ img.medium-red:hover {
     padding: 70px 0 25px;
   }
 
+  div.col-2 {
+    padding: 0;
+  }
+
   h1.title, div.biography h1 {
-    font-size: 65px;
-  }
-
-  div.header p {
-    font-size: 75px;
-  }
-
-  div.biography p, div.projects p {
-    font-size: 45px;
-  }
-
-  h2 {
     font-size: 50px;
   }
 
+  div.header p {
+    font-size: 50px;
+  }
+
+  div.biography p, div.projects p {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
   div.cover-image img {
-    padding: 50px 0 0;
-    height: 1250px;
+    padding: 25px 0 0 100px;
+    height: 1000px;
     width: auto;
   }
 
